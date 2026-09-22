@@ -7,27 +7,30 @@
     <!-- Tailwind CSS for vibrant styling -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts for Logo Styling -->
+    <!-- Google Fonts for Typography -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet">
-    <style>
-        .brand-logo-font {
-            font-family: 'Playfair Display', serif;
-        }
-    </style>
 </head>
 <body class="bg-emerald-50 text-slate-800 font-sans overflow-x-hidden">
 
     <!-- Header / Navbar -->
     <header class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-amber-950 text-white shadow-xl sticky top-0 z-50 border-b border-amber-500/30">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
-            <!-- Logo -->
+            <!-- Logo Image Integration -->
             <div class="flex items-center space-x-2 sm:space-x-3">
-                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-amber-300 via-amber-500 to-amber-600 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg border border-amber-200">
-                    <span class="brand-logo-font italic font-bold text-emerald-950 text-xl sm:text-2xl tracking-tighter">A&E</span>
+                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-amber-400 flex items-center justify-center p-1">
+                    <img 
+                        src="images/logo.png" 
+                        alt="Atharv Enterprises Logo" 
+                        class="w-full h-full object-contain rounded-xl"
+                    >
                 </div>
                 <div>
-                    <h1 class="text-sm sm:text-lg font-black tracking-wider text-amber-300">ATHARV ENTERPRISES</h1>
-                    <p class="text-[9px] sm:text-[10px] uppercase tracking-widest text-emerald-200 font-semibold">Makers of White Pearl Makhana</p>
+                    <h1 class="text-sm sm:text-lg font-black tracking-wider text-amber-300">
+                        ATHARV ENTERPRISES
+                    </h1>
+                    <p class="text-[9px] sm:text-[10px] uppercase tracking-widest text-emerald-200 font-semibold">
+                        Makers of White Pearl Makhana
+                    </p>
                 </div>
             </div>
             
@@ -77,16 +80,15 @@
                 </div>
             </div>
             <div class="flex justify-center mt-4 md:mt-0">
-                <!-- Hero Image Display -->
                 <div class="p-2 max-w-xs sm:max-w-sm w-full text-center relative">
                     <div class="absolute top-2 right-4 sm:right-6 z-20 bg-amber-500 text-emerald-950 text-xs font-black px-3.5 py-1 rounded-full shadow-lg">Best Seller</div>
-                    <img src="images/packet-250g.jpg.jpeg" alt="White Pearl Makhana 250g" class="rounded-3xl shadow-2xl w-full object-cover border-4 border-amber-400/40">
+                    <img src="images/packet-250g.jpeg" alt="White Pearl Makhana 250g" class="rounded-3xl shadow-2xl w-full object-cover border-4 border-amber-400/40">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products Showcase with Both Packets -->
+    <!-- Products Showcase -->
     <section id="products" class="py-16 sm:py-20 bg-gradient-to-b from-emerald-50 to-white">
         <div class="max-w-7xl mx-auto px-4">
             <div class="text-center max-w-2xl mx-auto mb-12 sm:mb-16">
@@ -101,9 +103,9 @@
                     <div class="absolute top-0 right-0 bg-emerald-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">13mm - 18mm</div>
                     <div>
                         <div class="overflow-hidden rounded-2xl mb-4 bg-emerald-950/5 h-64 sm:h-80 flex items-center justify-center p-2">
-                            <img src="images/packet-100g.jpg.jpeg" alt="White Pearl Makhana 100g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
+                            <img src="images/packet-100g.jpeg" alt="White Pearl Makhana 100g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
                         </div>
-                        <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Standard Pack (100g)[cite: 2]</span>
+                        <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Standard Pack (100g)</span>
                         <h3 class="text-xl sm:text-2xl font-black text-emerald-950 mt-3">White Pearl Makhana (100g)</h3>
                         <p class="text-slate-600 text-sm mt-2">Perfect regular snacking option loaded with 100% natural, gluten-free, high-protein benefits.</p>
                     </div>
@@ -118,7 +120,7 @@
                     <div class="absolute top-0 right-0 bg-amber-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">19mm - 25mm</div>
                     <div>
                         <div class="overflow-hidden rounded-2xl mb-4 bg-emerald-950/5 h-64 sm:h-80 flex items-center justify-center p-2">
-                            <img src="images/packet-250g.jpg.jpeg" alt="White Pearl Makhana 250g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
+                            <img src="images/packet-250g.jpeg" alt="White Pearl Makhana 250g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
                         </div>
                         <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Family / Jumbo Pack (250g)</span>
                         <h3 class="text-xl sm:text-2xl font-black text-emerald-950 mt-3">White Pearl Makhana (250g)</h3>
@@ -256,12 +258,16 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with GST and FSSAI Information -->
     <footer class="bg-emerald-950 text-slate-400 py-10 border-t border-emerald-900">
         <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-center md:text-left gap-6">
             <div>
                 <h3 class="text-white font-bold text-lg">Atharv Enterprises</h3>
                 <p class="text-xs mt-1 text-slate-400">&copy; 2026 Atharv Enterprises. All rights reserved. | White Pearl Makhana.</p>
+                <div class="mt-2 text-xs text-amber-300 flex flex-wrap justify-center md:justify-start gap-4 font-semibold">
+                    <span>GSTIN: 10AIUPN1068M2ZW</span>
+                    <span>FSSAI: Applied / Coming Soon</span>
+                </div>
             </div>
             <div class="flex space-x-6 text-xl">
                 <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-facebook"></i></a>
