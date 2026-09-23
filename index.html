@@ -16,16 +16,25 @@
     <header class="bg-gradient-to-r from-emerald-950 via-emerald-900 to-amber-950 text-white shadow-xl sticky top-0 z-50 border-b border-amber-500/30">
         <div class="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
             <!-- Logo Image Integration -->
-            <div class="flex items-center space-x-2.5 sm:space-x-3">
-                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-2xl overflow-hidden shadow-xl border-2 border-amber-400 flex items-center justify-center">
-                    <img src="images/logo.jpg" alt="Atharv Enterprises Logo" class="w-full h-full object-cover scale-125 transform">
+            <!-- Logo Image Integration -->
+            <div class="flex items-center space-x-2 sm:space-x-3">
+                <div class="w-12 h-12 sm:w-14 sm:h-14 bg-white rounded-2xl overflow-hidden shadow-lg border-2 border-amber-400 flex items-center justify-center p-1">
+                    <img 
+                        src="images/logo.png" 
+                        alt="Atharv Enterprises Logo" 
+                        class="w-full h-full object-contain rounded-xl"
+                    >
                 </div>
+
                 <div>
-                    <h1 class="text-sm sm:text-lg font-black tracking-wider text-amber-300">ATHARV ENTERPRISES</h1>
-                    <p class="text-[9px] sm:text-[10px] uppercase tracking-widest text-emerald-200 font-semibold">Makers of White Pearl Makhana</p>
+                    <h1 class="text-sm sm:text-lg font-black tracking-wider text-amber-300">
+                        ATHARV ENTERPRISES
+                    </h1>
+                    <p class="text-[9px] sm:text-[10px] uppercase tracking-widest text-emerald-200 font-semibold">
+                        Makers of White Pearl Makhana
+                    </p>
                 </div>
             </div>
-            
             <nav class="hidden md:flex space-x-8 font-semibold text-sm">
                 <a href="#home" class="hover:text-amber-300 transition">Home</a>
                 <a href="#products" class="hover:text-amber-300 transition">Our Products</a>
@@ -74,7 +83,7 @@
             <div class="flex justify-center mt-4 md:mt-0">
                 <div class="p-2 max-w-xs sm:max-w-sm w-full text-center relative">
                     <div class="absolute top-2 right-4 sm:right-6 z-20 bg-amber-500 text-emerald-950 text-xs font-black px-3.5 py-1 rounded-full shadow-lg">Best Seller</div>
-                    <img src="images/packet-250g.jpg" alt="White Pearl Makhana 250g" class="rounded-3xl shadow-2xl w-full object-cover border-4 border-amber-400/40">
+                    <img src="images/packet-250g.jpeg" alt="White Pearl Makhana 250g" class="rounded-3xl shadow-2xl w-full object-cover border-4 border-amber-400/40">
                 </div>
             </div>
         </div>
@@ -95,7 +104,7 @@
                     <div class="absolute top-0 right-0 bg-emerald-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">13mm - 18mm</div>
                     <div>
                         <div class="overflow-hidden rounded-2xl mb-4 bg-emerald-950/5 h-64 sm:h-80 flex items-center justify-center p-2">
-                            <img src="images/packet-100g.jpg" alt="White Pearl Makhana 100g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
+                            <img src="images/packet-100g.jpeg" alt="White Pearl Makhana 100g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
                         </div>
                         <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Standard Pack (100g)</span>
                         <h3 class="text-xl sm:text-2xl font-black text-emerald-950 mt-3">White Pearl Makhana (100g)</h3>
@@ -112,7 +121,7 @@
                     <div class="absolute top-0 right-0 bg-amber-600 text-white text-xs font-bold px-4 py-1 rounded-bl-xl">19mm - 25mm</div>
                     <div>
                         <div class="overflow-hidden rounded-2xl mb-4 bg-emerald-950/5 h-64 sm:h-80 flex items-center justify-center p-2">
-                            <img src="images/packet-250g.jpg" alt="White Pearl Makhana 250g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
+                            <img src="images/packet-250g.jpeg" alt="White Pearl Makhana 250g" class="h-full w-auto object-contain rounded-xl group-hover:scale-105 transition duration-300 shadow-md">
                         </div>
                         <span class="text-xs font-bold text-amber-700 bg-amber-100 px-3 py-1 rounded-full">Family / Jumbo Pack (250g)</span>
                         <h3 class="text-xl sm:text-2xl font-black text-emerald-950 mt-3">White Pearl Makhana (250g)</h3>
@@ -206,32 +215,34 @@
     <!-- Contact / Order Inquiry with WhatsApp Integration -->
     <section id="contact" class="py-16 sm:py-20 bg-gradient-to-br from-emerald-950 via-emerald-900 to-amber-950 text-white">
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-12 items-center">
-            <div class="text-center md:text-left">
+            <div class="text-left">
                 <span class="bg-amber-500 text-emerald-950 font-bold text-xs px-3.5 py-1.5 rounded-full uppercase tracking-wider">Get in Touch</span>
                 <h2 class="text-2xl sm:text-5xl font-black mt-4 text-amber-300">Place Your Order or Bulk Enquiry</h2>
                 <p class="text-emerald-100 text-sm sm:text-base mt-4 leading-relaxed">
                     Looking for premium White Pearl Makhana for retail distribution, wholesale, or bulk orders? Connect directly with us via WhatsApp using the form or details below.
                 </p>
-                <!-- Perfectly Aligned Contact Info Stack -->
-                <div class="mt-8 space-y-3.5 text-emerald-100 font-medium text-sm sm:text-base flex flex-col items-center md:items-start">
-                    <div class="flex items-center space-x-3 w-full justify-center md:justify-start">
-                        <i class="fa-solid fa-envelope text-amber-400 text-lg sm:text-xl w-6 text-center flex-shrink-0"></i> 
-                        <span>atharventerprise7@gmail.com</span>
+                
+                <!-- Strictly Left-Aligned Contact Stack for Mobile & Desktop -->
+                <div class="mt-8 space-y-4 text-emerald-100 font-medium text-sm sm:text-base flex flex-col items-start">
+                    <div class="flex items-start space-x-3 w-full">
+                        <i class="fa-solid fa-envelope text-amber-400 text-lg w-5 text-center flex-shrink-0 mt-0.5"></i> 
+                        <span class="break-all">atharventerprise7@gmail.com</span>
                     </div>
-                    <div class="flex items-center space-x-3 w-full justify-center md:justify-start">
-                        <i class="fa-solid fa-phone text-amber-400 text-lg sm:text-xl w-6 text-center flex-shrink-0"></i> 
+                    <div class="flex items-start space-x-3 w-full">
+                        <i class="fa-solid fa-phone text-amber-400 text-lg w-5 text-center flex-shrink-0 mt-0.5"></i> 
                         <span>+91 9155276378 / +91 9288016466</span>
                     </div>
-                    <div class="flex items-center space-x-3 w-full justify-center md:justify-start">
-                        <i class="fa-brands fa-whatsapp text-emerald-400 text-xl sm:text-2xl w-6 text-center flex-shrink-0"></i> 
-                        <a href="https://wa.me/919155276378" target="_blank" class="hover:text-amber-300 underline decoration-amber-400/50">+91 9155276378 (WhatsApp)</a>
+                    <div class="flex items-start space-x-3 w-full">
+                        <i class="fa-brands fa-whatsapp text-emerald-400 text-xl w-5 text-center flex-shrink-0 mt-0.5"></i> 
+                        <a href="https://wa.me/919155276378" target="_blank" class="hover:text-amber-300 underline decoration-amber-400/50">+91 9155276378</a>
                     </div>
-                    <div class="flex items-start space-x-3 w-full justify-center md:justify-start">
-                        <i class="fa-solid fa-location-dot text-amber-400 text-lg sm:text-xl w-6 text-center flex-shrink-0 mt-0.5"></i> 
+                    <div class="flex items-start space-x-3 w-full">
+                        <i class="fa-solid fa-location-dot text-amber-400 text-lg w-5 text-center flex-shrink-0 mt-0.5"></i> 
                         <span>Atharv Enterprises, Katihar, Bihar, India</span>
                     </div>
                 </div>
             </div>
+
             <div class="bg-white text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl border-4 border-amber-500/30">
                 <h3 class="text-xl sm:text-2xl font-black mb-6 text-emerald-950">Send WhatsApp Inquiry</h3>
                 <form id="whatsappForm" onsubmit="sendToWhatsApp(event)" class="space-y-4">
@@ -248,7 +259,7 @@
                         <select id="clientRequirement" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 text-sm bg-white">
                             <option>White Pearl 100g (Standard Pack - Premium Grade)</option>
                             <option>White Pearl 250g (Family Pack - Gold Grade)</option>
-                            <option>Bulk / Wholesale Order (1kg+)</option>
+                            <option>Bulk / Wholesale Order</option>
                         </select>
                     </div>
                     <div>
@@ -272,7 +283,7 @@
                 <p class="text-xs mt-1 text-slate-400">&copy; 2026 Atharv Enterprises. All rights reserved. | White Pearl Makhana.</p>
                 <div class="mt-2 text-xs text-amber-300 flex flex-wrap justify-center md:justify-start gap-4 font-semibold">
                     <span>GSTIN: 10AIUPN1068M2ZW</span>
-                    <span>FSSAI Lic. No.: [Yahan apna FSSAI number daal dein]</span>
+                    <span>FSSAI Lic. No.: 20426353000117</span>
                 </div>
             </div>
             <div class="flex space-x-6 text-xl">
