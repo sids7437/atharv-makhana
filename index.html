@@ -52,7 +52,7 @@
         <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center relative z-10">
             <div class="space-y-4 sm:space-y-6 text-center md:text-left">
                 <div class="inline-block">
-                    <span class="bg-amber-500/20 border border-amber-400 text-amber-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Direct from Mithila, Bihar</span>
+                    <span class="bg-amber-500/20 border border-amber-400 text-amber-300 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">Direct from Katihar, Bihar</span>
                 </div>
                 <h1 class="text-3xl sm:text-5xl md:text-6xl font-black leading-tight text-white">
                     Pure, Premium <span class="text-amber-400">White Pearl</span> Makhana
@@ -223,7 +223,11 @@
                 <div class="mt-8 space-y-3 text-emerald-100 font-medium text-sm sm:text-base flex flex-col items-center md:items-start">
                     <p class="flex items-center"><i class="fa-solid fa-envelope w-8 text-amber-400 text-lg sm:text-xl flex-shrink-0"></i> atharventerprise7@gmail.com</p>
                     <p class="flex items-center"><i class="fa-solid fa-phone w-8 text-amber-400 text-lg sm:text-xl flex-shrink-0"></i> +91 9155276378 / +91 9288016466</p>
-                    <p class="flex items-center"><i class="fa-solid fa-location-dot w-8 text-amber-400 text-lg sm:text-xl flex-shrink-0"></i> Atharv Enterprises, Bihar, India</p>
+                    <p class="flex items-center">
+                        <i class="fa-brands fa-whatsapp w-8 text-emerald-400 text-xl sm:text-2xl flex-shrink-0"></i> 
+                        <a href="https://wa.me/919155276378" target="_blank" class="hover:text-amber-300 underline decoration-amber-400/50">+91 9155276378</a>
+                    </p>
+                    <p class="flex items-center"><i class="fa-solid fa-location-dot w-8 text-amber-400 text-lg sm:text-xl flex-shrink-0"></i> Atharv Enterprises, Katihar, Bihar, India</p>
                 </div>
             </div>
             <div class="bg-white text-slate-800 p-6 sm:p-8 rounded-3xl shadow-2xl border-4 border-amber-500/30">
@@ -242,7 +246,7 @@
                         <select id="clientRequirement" class="w-full px-4 py-3 border border-slate-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-emerald-600 text-sm bg-white">
                             <option>White Pearl 100g (Standard Pack - Premium Grade)</option>
                             <option>White Pearl 250g (Family Pack - Gold Grade)</option>
-                            <option>Bulk / Wholesale Order</option>
+                            <option>Bulk / Wholesale Order (1kg+)</option>
                         </select>
                     </div>
                     <div>
@@ -272,14 +276,25 @@
             <div class="flex space-x-6 text-xl">
                 <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-facebook"></i></a>
                 <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://wa.me/919155276378" class="hover:text-amber-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://wa.me/919155276378" target="_blank" class="hover:text-amber-400 transition"><i class="fa-brands fa-whatsapp"></i></a>
                 <a href="#" class="hover:text-amber-400 transition"><i class="fa-brands fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
 
-    <!-- WhatsApp Form Script -->
+    <!-- Scripts -->
     <script>
+        // Force page to scroll to top on hard refresh
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo(0, 0);
+        });
+
+        if ('scrollRestoration' in history) {
+            history.scrollRestoration = 'manual';
+        }
+        window.scrollTo(0, 0);
+
+        // WhatsApp Form Redirect Function
         function sendToWhatsApp(event) {
             event.preventDefault();
             
